@@ -1,0 +1,50 @@
+#swirth-whatsapp {
+    &-mobile {
+        @media (min-width: @screen__m) {
+            display: none;
+        }
+    }
+    &-desktop {
+        @media (max-width: @screen__m) {
+            display: none;
+        }
+    }
+
+    &-mobile,
+    &-desktop {
+        position: fixed;
+        bottom: 32px;
+
+        &.right {
+            right: 32px;
+        }
+
+        &.left {
+            left: 32px;
+        }
+
+        &.small {
+            padding: 4px;
+
+            img {
+                height: 40px;
+            }
+        }
+
+        &.medium {
+            padding: 8px;
+
+            img {
+                height: 50px;
+            }
+        }
+
+        &.large {
+            padding: 12px;
+
+            img {
+                height: 60px;
+            }
+        }
+    }
+}
