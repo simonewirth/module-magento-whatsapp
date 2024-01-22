@@ -1,0 +1,27 @@
+<?php
+
+$helperData = $this->helper(Swirth\Whatsapp\Helper\Data::class);
+echo $helperData->getPhoneNumber();
+echo $helperData->getMessage();
+?>
+<?php
+
+if ($helperData->isModuleEnabled()) {
+    ?>
+    <a id="swirth-whatsapp-desktop"
+       class="<?= $helperData->getPosition(); ?> <?= $helperData->getSize(); ?>"
+       href="https://web.whatsapp.com/send?phone=<?= $helperData->getPhoneNumber(); ?>&text=<?= $helperData->getMessage(); ?>"
+       target="_blank">
+        <img src="<?= $this->getViewFileUrl('Swirth_Whatsapp::images/whatsapp-logo.svg'); ?>"
+             alt="<?= __("Whatsapp Button"); ?>">
+    </a>
+    <a id="swirth-whatsapp-mobile"
+       class="<?= $helperData->getPosition(); ?> <?= $helperData->getSize(); ?>"
+       href="https://wa.me/049999822748?text=<?= $helperData->getMessage(); ?>" target="_blank">
+        <img src="<?= $this->getViewFileUrl('Swirth_Whatsapp::images/whatsapp-logo.svg'); ?>"
+             alt="<?= __("Whatsapp Button"); ?>">
+    </a>
+    <?php
+}
+?>
+
