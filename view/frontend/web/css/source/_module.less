@@ -4,6 +4,7 @@
             display: none;
         }
     }
+
     &-desktop {
         @media (max-width: @screen__m) {
             display: none;
@@ -14,6 +15,9 @@
     &-desktop {
         position: fixed;
         bottom: 32px;
+        background-color: #25D366;
+        border-radius: 50%;
+        z-index: 100;
 
         &.right {
             right: 32px;
@@ -23,11 +27,16 @@
             left: 32px;
         }
 
+        img {
+            display: block;
+        }
+
         &.small {
             padding: 4px;
 
             img {
-                height: 40px;
+                height: 24px;
+                width: 24px;
             }
         }
 
@@ -35,7 +44,8 @@
             padding: 8px;
 
             img {
-                height: 50px;
+                height: 36px;
+                width: 36px;
             }
         }
 
@@ -43,7 +53,8 @@
             padding: 12px;
 
             img {
-                height: 60px;
+                height: 48px;
+                width: 48px;
             }
         }
     }
