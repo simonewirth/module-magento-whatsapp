@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Swirth\Whatsapp\Helper;
+namespace Swirth\WhatsApp\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Framework\App\Helper\Context;
 
 class Data extends AbstractHelper
-
 {
+
     function __construct(Context $context)
     {
         parent::__construct($context);

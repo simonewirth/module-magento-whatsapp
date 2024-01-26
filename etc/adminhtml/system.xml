@@ -6,9 +6,9 @@
             <label>swirth</label>
         </tab>
         <section id="whatsapp" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
-            <label>Whatsapp</label>
+            <label>WhatsApp</label>
             <tab>swirth</tab>
-            <resource>Swirth_Whatsapp::config_swirth_whatsapp</resource>
+            <resource>Swirth_WhatsApp::config_swirth_whatsapp</resource>
             <group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
                 <label>General</label>
                 <field id="enabled" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1"
@@ -17,27 +17,27 @@
                     <comment/>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="whatsapp_number" type="text" sortOrder="10" showInWebsite="1" showInStore="1"
+                <field id="whatsapp_number" type="text" sortOrder="20" showInWebsite="1" showInStore="1"
                        showInDefault="1" translate="label">
-                    <label>Whatsapp_number</label>
+                    <label>WhatsApp number</label>
                     <comment/>
                 </field>
-                <field id="message" type="textarea" sortOrder="10" showInWebsite="1" showInStore="1"
+                <field id="message" type="textarea" sortOrder="30" showInWebsite="1" showInStore="1"
                        showInDefault="1" translate="label">
                     <label>Message</label>
                     <comment/>
                 </field>
-                <field id="position" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1"
+                <field id="position" type="select" sortOrder="40" showInWebsite="1" showInStore="1" showInDefault="1"
                        translate="label">
                     <label>Position</label>
                     <comment/>
-                    <source_model>Swirth\Whatsapp\Model\Config\Source\Position</source_model>
+                    <source_model>Swirth\WhatsApp\Model\Config\Source\Position</source_model>
                 </field>
-                <field id="size" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1"
+                <field id="size" type="select" sortOrder="50" showInWebsite="1" showInStore="1" showInDefault="1"
                        translate="label">
                     <label>Size</label>
                     <comment/>
-                    <source_model>Swirth\Whatsapp\Model\Config\Source\Size</source_model>
+                    <source_model>Swirth\WhatsApp\Model\Config\Source\Size</source_model>
                 </field>
             </group>
         </section>

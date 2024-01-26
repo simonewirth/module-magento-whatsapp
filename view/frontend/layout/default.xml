@@ -4,7 +4,7 @@
     <body>
         <referenceContainer name="before.body.end">
             <block name="swirth_whatsapp"
-                   template="Swirth_Whatsapp::whatsapp-button.phtml"
+                   template="Swirth_WhatsApp::whatsapp-button.phtml"
                    ifconfig="whatsapp/general/enabled">
             </block>
         </referenceContainer>

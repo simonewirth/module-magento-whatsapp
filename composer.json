@@ -1,6 +1,6 @@
 {
     "name": "swirth/module-whatsapp",
-    "description": "M\u00f3dulo whatsApp",
+    "description": "WhatsApp chat button",
     "type": "magento2-module",
     "license": "GPL-3.0",
     "minimum-stability": "dev",
@@ -10,7 +10,7 @@
             "registration.php"
         ],
         "psr-4": {
-            "Swirth\\Whatsapp\\": ""
+            "Swirth\\WhatsApp\\": ""
         }
     }
 }
